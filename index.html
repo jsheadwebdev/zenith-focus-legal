@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+  <title>Zenith Focus Privacy Policy</title>
+  <meta
+    name="description"
+    content="Privacy Policy for Zenith Focus, a local-first Android focus timer and task tracker."
+  />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --surface-2: #13213c;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --muted-2: #64748b;
+      --brand: #38bdf8;
+      --border: rgba(255, 255, 255, 0.08);
+      --max: 920px;
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 40px 0 20px;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(19, 33, 60, 0.98), rgba(30, 41, 59, 0.98));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: block;
+      flex: 0 0 auto;
+    }
+
+    .brand-wordmark {
+      height: 28px;
+      width: auto;
+      display: block;
+      max-width: 100%;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 760px;
+      font-size: 1rem;
+    }
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+
+    main {
+      padding: 12px 0 48px;
+    }
+
+    .section {
+      background: rgba(30, 41, 59, 0.92);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    footer {
+      padding: 12px 0 48px;
+      color: var(--muted-2);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (min-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-card {
+        padding: 34px;
+      }
+
+      .section {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="brand-row" aria-label="Zenith Focus brand">
+          <img
+            class="brand-mark"
+            src="assets/zenith_focus_mark_light.svg"
+            alt="Zenith Focus mark"
+          />
+          <img
+            class="brand-wordmark"
+            src="assets/zenith_focus_wordmark_light.svg"
+            alt="Zenith Focus"
+          />
+        </div>
+
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>Privacy Policy for Zenith Focus</h1>
+        <p>
+          Zenith Focus is a local-first Android focus timer and task tracker.
+          This Privacy Policy explains what information the app handles, how it
+          is used, and what third-party services may apply when you use the app.
+        </p>
+
+        <div class="meta">
+          <span class="pill">Effective date: April 21, 2026</span>
+          <span class="pill">Platform: Android</span>
+          <span class="pill">Local-first app</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="section">
+        <h2>1. Overview</h2>
+        <p>
+          Zenith Focus is designed to work primarily on your device. The app
+          lets you manage focus sessions and tasks locally, without requiring an
+          account or cloud sync.
+        </p>
+        <div class="note">
+          The app itself is intended to store your task and session-related
+          information on your device. The app also displays ads through Google
+          AdMob, which may collect information as described in Google’s own
+          privacy documentation.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>2. Information the App Stores Locally</h2>
+        <p>
+          Zenith Focus stores certain information on your device so the app can
+          function properly and preserve your progress between sessions.
+        </p>
+        <ul>
+          <li>Task titles and optional task details</li>
+          <li>Task completion state</li>
+          <li>The currently active task selection</li>
+          <li>Timer duration preferences</li>
+          <li>Completed focus session count</li>
+          <li>Onboarding and walkthrough state</li>
+        </ul>
+        <p>
+          This information is stored locally on your device and is used to make
+          the app function as expected.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Information the App Does Not Require Directly</h2>
+        <p>Zenith Focus does not currently require you to create an account.</p>
+        <p>Zenith Focus does not currently provide cloud sync.</p>
+        <p>
+          Zenith Focus does not currently require direct sign-in, username
+          registration, or password creation to use its main features.
+        </p>
+      </section>
+
+      <div class="grid">
+        <section class="section">
+          <h2>4. Advertising and Third-Party Services</h2>
+          <p>
+            Zenith Focus uses Google AdMob to display advertisements. AdMob and
+            its related services may collect, process, and use information in
+            accordance with Google’s own privacy policies and applicable legal
+            requirements.
+          </p>
+          <p>
+            This may include information such as device identifiers, IP address,
+            app interactions, diagnostics, approximate location derived from IP,
+            and other information used for ad delivery, fraud prevention,
+            measurement, or personalization depending on platform behavior,
+            region, settings, and applicable law.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>5. Third-Party Policy Reference</h2>
+          <p>
+            Because ads are provided through Google AdMob, Google may process
+            data independently under its own privacy terms.
+          </p>
+          <p>
+            You should review Google’s privacy information and AdMob-related
+            disclosures to understand how Google handles data in connection with
+            advertising services.
+          </p>
+        </section>
+      </div>
+
+      <section class="section">
+        <h2>6. How Information Is Used</h2>
+        <p>Information handled by Zenith Focus is used to:</p>
+        <ul>
+          <li>Store and display your tasks</li>
+          <li>Remember your selected active task</li>
+          <li>Preserve timer preferences and app state</li>
+          <li>Track completed focus sessions locally</li>
+          <li>Display advertising through AdMob</li>
+          <li>Maintain app stability and expected functionality</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Data Sharing</h2>
+        <p>
+          The app’s locally stored productivity data is intended to remain on
+          your device unless you choose to back up, export, or otherwise share
+          it through your own device or platform tools.
+        </p>
+        <p>
+          However, third-party advertising services such as Google AdMob may
+          receive and process data as part of serving ads and related services.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Data Retention</h2>
+        <p>
+          Locally stored app data remains on your device until you remove it,
+          clear app storage, uninstall the app, or overwrite the data through
+          normal app usage.
+        </p>
+        <p>
+          Third-party data retention, if any, is governed by the applicable
+          third-party provider’s own policies.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Security</h2>
+        <p>
+          Reasonable efforts are made to keep the app stable and to limit data
+          handling to what is needed for the app’s current functionality.
+          However, no method of storage, transmission, or electronic processing
+          can be guaranteed as completely secure.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Children’s Privacy</h2>
+        <p>
+          Zenith Focus is not directed specifically to children under the age
+          required by applicable law in their jurisdiction. If you believe a
+          child has provided personal information in a way that creates a legal
+          concern, contact the developer using the contact details below.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Your Choices</h2>
+        <p>You may be able to limit certain ad-related data use through:</p>
+        <ul>
+          <li>Your device privacy settings</li>
+          <li>Your Google account ad settings</li>
+          <li>Regional consent tools or platform-level privacy controls, where applicable</li>
+        </ul>
+        <p>
+          You may also remove locally stored app data by clearing the app’s
+          storage or uninstalling the app.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>12. Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time to reflect
+          changes in the app, legal requirements, or third-party service usage.
+          Updates will be reflected on this page by revising the effective date.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>13. Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or the privacy
+          practices related to Zenith Focus, contact:
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:zenithfocus.info@gmail.com">zenithfocus.info@gmail.com</a>
+        </p>
+        <p>
+          Replace this email with your real privacy contact address before
+          publishing.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Zenith Focus Privacy Policy
+    </div>
+  </footer>
+</body>
+</html>
